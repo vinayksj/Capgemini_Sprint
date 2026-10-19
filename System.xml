@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+<groups>
+		<run>
+			<include name="system"></include>
+		</run>
+	</groups>
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="Hrm.Employee.ValidEmployee"/>
+      <class name="Hrm.Login.InvalidLogin"/>
+      <class name="Hrm.Login.ValidLogin"/>
+      <class name="Hrm.DashBoard.InvalidDashboard"/>
+      <class name="Hrm.Resources.InvalidResouce"/>
+      <class name="Hrm.Resources.ValidResource"/>
+      <class name="Hrm.DashBoard.Dashboard"/>
+      <class name="Hrm.Employee.InvalidEmployee"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

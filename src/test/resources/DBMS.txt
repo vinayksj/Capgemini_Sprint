@@ -1,0 +1,37 @@
+DBMS D1:-
+
+CRUD
+data types 
+char - Char(10)
+
+commd in sql
+
+ddl data definitation lang
+dml data manipulatn lang
+dcl data control lang
+tcl transaction control lang
+dql d query lang(select)
+
+DDL - create,alter,rename,truncate(permt delete),drop
+dql-select
+dml-insert,update,delete
+dcl-grant,revoke
+tcl - state transaction ,commit rollback
+
+CREATE 1ST TABLE
+USE DB_NAME
+CREATE TABLE TABLE_NAME(
+COL1 DATATYPE CONSTRAINT,
+COL2 DATATYPE CONSTRAINT
+);
+
+EX1:
+CREATE DATABASE COOLEGE;
+USE COLLEGE;
+CREATE TABLE STUDENT (
+ID INT PRIMARY KEY,
+NAME VARCHAR(50)
+);
+
+* CONSTRAINT(FORIENGN,PRIMARY,NULL)
+
