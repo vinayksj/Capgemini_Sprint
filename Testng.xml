@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Ninza Hrm suite">
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+            <class name="Ninza.HRM.Login.LaunchTest"/>
+        </classes>
+    </test>
+</suite>
