@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="HRM Parallel Suite" parallel="tests" thread-count="5">
+
+	<test name="Valid Employee">
+		<classes>
+			<class name="Hrm.Employee.ValidEmployee" />
+		</classes>
+	</test>
+
+	<test name="Invalid Login">
+		<classes>
+			<class name="Hrm.Login.InvalidLogin" />
+		</classes>
+	</test>
+
+	<test name="Valid Login">
+		<classes>
+			<class name="Hrm.Login.ValidLogin" />
+		</classes>
+	</test>
+
+	<test name="Invalid Dashboard">
+		<classes>
+			<class name="Hrm.DashBoard.InvalidDashboard" />
+		</classes>
+	</test>
+
+	<test name="Launch Test">
+		<classes>
+			<class name="Hrm.Login.LaunchTest" />
+		</classes>
+	</test>
+
+	<test name="Invalid Resource">
+		<classes>
+			<class name="Hrm.Resources.InvalidResouce" />
+		</classes>
+	</test>
+
+	<test name="Valid Resource">
+		<classes>
+			<class name="Hrm.Resources.ValidResource" />
+		</classes>
+	</test>
+
+	<test name="Dashboard">
+		<classes>
+			<class name="Hrm.DashBoard.Dashboard" />
+		</classes>
+	</test>
+
+	<test name="Invalid Employee">
+		<classes>
+			<class name="Hrm.Employee.InvalidEmployee" />
+		</classes>
+	</test>
+
+</suite>

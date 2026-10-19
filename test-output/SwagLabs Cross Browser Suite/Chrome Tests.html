@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  Chrome Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 19 15:06:34 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>75 seconds (75707 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Hrm.Login.InvalidLogin.TC_LOGIN_02_verifyWrongPassword()'><b>TC_LOGIN_02_verifyWrongPassword</b><br>Test class: Hrm.Login.InvalidLogin<br/>
+<a href="#Output-625971310" onClick='toggleBox("Output-625971310", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-625971310" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-625971310">
+Wrong Password Test Passed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Hrm.Login.InvalidLogin@3f56875e</td></tr>
+<tr>
+<td title='Hrm.Login.InvalidLogin.TC_LOGIN_03_verifyBlankPassword()'><b>TC_LOGIN_03_verifyBlankPassword</b><br>Test class: Hrm.Login.InvalidLogin<br/>
+<a href="#Output-1700397528" onClick='toggleBox("Output-1700397528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1700397528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1700397528">
+Blank Password Test Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Hrm.Login.InvalidLogin@3f56875e</td></tr>
+<tr>
+<td title='Hrm.Resources.InvalidResouce.searchInvalidFileTest()'><b>searchInvalidFileTest</b><br>Test class: Hrm.Resources.InvalidResouce<br/>
+<a href="#Output-104826203" onClick='toggleBox("Output-104826203", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-104826203" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-104826203">
+Invalid file search test passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>Hrm.Resources.InvalidResouce@3571b748</td></tr>
+<tr>
+<td title='Hrm.Resources.ValidResource.searchExistingFileTest()'><b>searchExistingFileTest</b><br>Test class: Hrm.Resources.ValidResource<br/>
+<a href="#Output-875761527" onClick='toggleBox("Output-875761527", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-875761527" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-875761527">
+DBMS1.docx is present<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Hrm.Resources.ValidResource@484970b0</td></tr>
+<tr>
+<td title='Hrm.Login.InvalidLogin.TC_LOdGIN_04_blank()'><b>TC_LOdGIN_04_blank</b><br>Test class: Hrm.Login.InvalidLogin<br/>
+<a href="#Output-797313059" onClick='toggleBox("Output-797313059", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-797313059" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-797313059">
+Blank Test Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Hrm.Login.InvalidLogin@3f56875e</td></tr>
+<tr>
+<td title='Hrm.Employee.ValidEmployee.TC_EMP_04_addValidEmployees()'><b>TC_EMP_04_addValidEmployees</b><br>Test class: Hrm.Employee.ValidEmployee<br/>
+<a href="#Output-368603167" onClick='toggleBox("Output-368603167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-368603167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-368603167">
+Valid Employee Test Completed: Aarav Sharma<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Hrm.Employee.ValidEmployee@4e3958e7</td></tr>
+<tr>
+<td title='Hrm.DashBoard.InvalidDashboard.TC_DASH_010_verifyDashboardAccessWithoutLogin()'><b>TC_DASH_010_verifyDashboardAccessWithoutLogin</b><br>Test class: Hrm.DashBoard.InvalidDashboard<br/>
+<a href="#Output-1595180029" onClick='toggleBox("Output-1595180029", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1595180029" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1595180029">
+Dashboard Negative Test Passed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Hrm.DashBoard.InvalidDashboard@fd07cbb</td></tr>
+<tr>
+<td title='Hrm.Login.LaunchTest.browserLaunchTest()'><b>browserLaunchTest</b><br>Test class: Hrm.Login.LaunchTest</td>
+<td></td>
+<td>0</td>
+<td>Hrm.Login.LaunchTest@3e96bacf</td></tr>
+<tr>
+<td title='Hrm.Employee.ValidEmployee.DeleteEmployee()'><b>DeleteEmployee</b><br>Test class: Hrm.Employee.ValidEmployee</td>
+<td></td>
+<td>4</td>
+<td>Hrm.Employee.ValidEmployee@4e3958e7</td></tr>
+<tr>
+<td title='Hrm.Login.ValidLogin.TC_LOGIN_01_verifyLogin()'><b>TC_LOGIN_01_verifyLogin</b><br>Test class: Hrm.Login.ValidLogin</td>
+<td></td>
+<td>1</td>
+<td>Hrm.Login.ValidLogin@2b4bac49</td></tr>
+<tr>
+<td title='Hrm.DashBoard.Dashboard.TC_DASH_001_verifyDashboard()'><b>TC_DASH_001_verifyDashboard</b><br>Test class: Hrm.DashBoard.Dashboard<br/>
+<a href="#Output-1205817409" onClick='toggleBox("Output-1205817409", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1205817409" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1205817409">
+Dashboard Positive Test Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Hrm.DashBoard.Dashboard@7c83dc97</td></tr>
+<tr>
+<td title='Hrm.Resources.ValidResource.uploadValidFileTest()'><b>uploadValidFileTest</b><br>Test class: Hrm.Resources.ValidResource<br/>
+<a href="#Output-1762731246" onClick='toggleBox("Output-1762731246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1762731246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1762731246">
+Valid file upload test passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Hrm.Resources.ValidResource@484970b0</td></tr>
+<tr>
+<td title='Hrm.Employee.InvalidEmployee.TC_EMP_12_addInvalidEmployees()'><b>TC_EMP_12_addInvalidEmployees</b><br>Test class: Hrm.Employee.InvalidEmployee<br/>
+<a href="#Output-515398215" onClick='toggleBox("Output-515398215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515398215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515398215">
+Invalid Employee Test Passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Hrm.Employee.InvalidEmployee@7748410a</td></tr>
+</table><p>
+</body>
+</html>
