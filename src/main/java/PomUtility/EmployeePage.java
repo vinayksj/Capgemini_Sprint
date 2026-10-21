@@ -1,5 +1,6 @@
 package PomUtility;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -65,9 +66,10 @@ public class EmployeePage {
     private WebElement delete;
 
     
-    public void SearchTf(String By) {
-    	SearchBox.clear();
-    	SearchBox.sendKeys(By);
+    public void SearchTf(String text) {
+        SearchBox.clear();
+        SearchBox.sendKeys(text);
+        SearchBox.sendKeys(Keys.ENTER);   // only if the app needs Enter to search
     }
     @FindBy(xpath = "//input[@placeholder='Search by Email']")
     private WebElement SearchBox;
@@ -76,7 +78,7 @@ public class EmployeePage {
         return Name;
     }
     
-    @FindBy(xpath = "//input[@value='Delete']")
+    @FindBy(xpath = "//input[@class='btn btn-danger']")
     private WebElement Confirmdel;
     
     public void ClickCfmDel() {
@@ -88,7 +90,7 @@ public class EmployeePage {
     public String getTableText() {
         return employeeTable.getText();
     }
-    @FindBy(xpath = "//i[@title='Delete']")
+    @FindBy(xpath = "(//i[@title='Delete'])[1]")
     private WebElement DelBox;
     
     public  void ClickDel() {

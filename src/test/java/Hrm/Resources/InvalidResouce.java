@@ -11,7 +11,7 @@ import PomUtility.ResourcePage;
 
 public class InvalidResouce extends Base {
 
-    @Test(groups = {"neg", "system"})
+    @Test(groups = {"negative", "system"})
     public void searchInvalidFileTest() throws Exception {
 
     	Login();

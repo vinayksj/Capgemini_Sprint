@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Hrm.Login.ValidLogin">
+      <class name="Hrm.Resources.ValidResource">
         <methods>
+          <include name="uploadValidFileTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="TC_LOGIN_01_verifyLogin"/>
         </methods>
-      </class> <!-- Hrm.Login.ValidLogin -->
+      </class> <!-- Hrm.Resources.ValidResource -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

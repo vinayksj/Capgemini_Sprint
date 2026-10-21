@@ -38,8 +38,8 @@ public class InvalidLogin extends Base {
     public void TC_LOGIN_02_verifyWrongPassword() throws Exception {
 
         ExcelUtility E = new ExcelUtility();
-        String username = E.readData("Login_Test_Data.xlsx", "Sheet2", 3, 0);
-        String password = E.readData("Login_Test_Data.xlsx", "Sheet2", 3, 1);
+        String username = E.readData("Login_Test_Data.xlsx", "Sheet2", 4, 0);
+        String password = E.readData("Login_Test_Data.xlsx", "Sheet2", 4, 1);
 
         login(username, password);
 

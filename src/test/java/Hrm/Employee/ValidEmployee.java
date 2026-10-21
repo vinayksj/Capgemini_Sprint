@@ -1,5 +1,6 @@
 package Hrm.Employee;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -61,29 +62,45 @@ public class ValidEmployee extends Base {
         Reporter.log("Valid Employee Test Completed: " + name, true);
     }
 
-        @Test(priority=2,groups = {"functional", "system"})
-        public void DeleteEmployee() throws Exception {
-        	ExcelUtility E= new ExcelUtility();
-        	
-            Login();
-            
-            EmployeePage emp = new EmployeePage(driver);
-            emp.clickEmployees();
-            
-            String email = E.readData("emp_data.xlsx", "Sheet1", 1, 1);
-            emp.selectSearchBy("Search by Email");
-            emp.SearchTf(email);
-            emp.ClickDel();
-            emp.ClickCfmDel();
-            
-            emp.selectSearchBy("Search by Email");
-            Thread.sleep(2000);
-            emp.SearchTf(email);
-            
-            String tableText = emp.getTableText();
 
-            Assert.assertTrue(tableText.contains(email),"Employee email is not present in the table");
-            
-            
-        }  
+@Test(priority = 2, groups = {"functional", "system"})
+public void DeleteEmployee() throws Exception {
+
+    ExcelUtility E = new ExcelUtility();
+
+    Login();
+
+    EmployeePage emp = new EmployeePage(driver);
+    emp.clickEmployees();
+
+    String email = E.readData("emp_data.xlsx", "Sheet1", 1, 1);
+
+    // Search for the employee
+    emp.selectSearchBy("Search by Email");
+    emp.SearchTf(email);
+    Thread.sleep(2000);
+
+    // Delete the employee
+    emp.ClickDel();
+    emp.ClickCfmDel();
+    Thread.sleep(2000);
+
+    // Refresh the page
+    driver.navigate().refresh();
+    Thread.sleep(2000);
+
+    // Search again to verify deletion
+    emp.selectSearchBy("Search by Email");
+    emp.SearchTf(email);
+    Thread.sleep(2000);
+
+    // Verify that no employee rows are displayed
+    Assert.assertTrue(
+        driver.findElements(By.xpath("//table//tbody/tr")).isEmpty(),
+        "Deleted employee is still displayed"
+    );
+
+    Reporter.log("Employee deleted successfully", true);
+}
+
 }
